@@ -58,10 +58,18 @@
     }
     
     <a asp-action="Index">Back to List</a>
-        <a class="btn btn-success text-white" 
+@if (User.Identity.IsAuthenticated && User.IsInRole("User"))
+                                {
+                                      <a class="btn btn-success text-white mt-1" 
                                    asp-controller="Orders" 
                                    asp-action="AddToShoppingCart" 
                                    asp-route-id="@Model.Id">
                                 <i class="bi bi-cart-plus"></i> Add to Cart (Price @Model.Price.ToString("c"))</a>
+                                }
+                                else{
+
+                                     <a class="btn btn-outline-success mt-1" asp-controller="Account" asp-action="Register">
+                                       Join To Order!</a>
+                                }
                            
 </div>

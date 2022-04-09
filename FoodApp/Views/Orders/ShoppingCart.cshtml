@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-md-8 offset-2">
         <div class="text-center">
-            <h2>You shopping cart summary</h2>
+            <h2>Your shopping cart summary</h2>
         </div>
 
         <table class="table">
@@ -78,17 +78,13 @@
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
     <script>
-
-        //HTML.raw: enable to call model inside javascript code
-        let _total = @Html.Raw(Model.ShoppingCartTotal);
+  let _total = @Html.Raw(Model.ShoppingCartTotal);
 
         paypal.Button.render({
             //Configure environment
-            //sandbox here as it is sample account for test payment
-            
             env: 'sandbox',
             client: {
-                sandbox: 'AYQt-WahDMnf9fZEAQ7Y42L8E1hJ96Haw8TchooeH7KwAmkq7CX5n3AP0ccP9Tr6y6V1EqI1fzzO3SNV'
+                sandbox: 'AcKRtgL4i68EZ2ZYuYUx3ilihAg2YhL5dtF_m19A8MjBWVOn6ewNS4M_uV8gA3xi98zTcUq38gUHbVFx'
             },
 
             //Customize button

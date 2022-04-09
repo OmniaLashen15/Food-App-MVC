@@ -22,7 +22,7 @@ namespace FoodApp.Data.ViewModel
         public string Password { get; set; }
 
         [Display(Name = "Confirm password")]
-        [Required(ErrorMessage = "Confirm password is required")]
+        [Required(ErrorMessage = "At least one speacial charchter @,#,$,%,^,& and one Uppercase.")]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Passwords do not match")]
         public string ConfirmPassword { get; set; }
