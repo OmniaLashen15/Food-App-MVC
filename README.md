@@ -1,4 +1,5 @@
 # Food-App-MVC
+yummy
 
 
 To login as a user:  
@@ -14,3 +15,5 @@ To login as an admin:
 To use paypal: 
 Fake sandbox Email: sb-fxfte14706769@personal.example.com
              Password:      -sYe%:0E
+
+
